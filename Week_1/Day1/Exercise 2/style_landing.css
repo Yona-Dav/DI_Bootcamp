@@ -1,0 +1,72 @@
+ul{
+display:flex;
+justify-content: space-around;
+list-style-type: none;
+background-color: #D7DEDB;
+padding: 10px;
+margin: 0px}
+
+
+* {
+	font-family: Helvetica;
+
+}
+
+input[type=button]{
+	color:white;
+	background-color: #075DA4;
+	border-radius: 10px;
+}
+
+#head {
+	background-image: url(https://images.pexels.com/photos/1655166/pexels-photo-1655166.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: fixed;
+	height: 400px;
+	text-align: center;
+	position: relative;
+
+
+}
+
+#head p {
+	font-size: 30px;
+	color:#fff;
+	position: absolute;
+    top: 25%;
+    width: 100%;
+    display: block;
+
+}
+
+#head form {
+	position: absolute;
+    top: 50%;
+    width: 100%;
+    border-radius: 40px;
+}
+
+#down {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	background-color: #D7DEDB;
+	padding-top: 50px;
+	position: relative;
+	/*flex-direction: center;*/
+
+	
+}
+
+div p {
+	color:grey;
+
+}
+
+h3 {text-align: center;
+}
+
+.box2 {padding-left: 50px;
+padding-right: 50px;}
+

@@ -1,0 +1,50 @@
+span{
+	background-color: yellow;
+}
+
+.quantity {
+	text-indent: center;
+}
+
+
+.quantity h3 {
+	text-decoration: underline;
+	text-indent: 40px;
+}
+
+ol{
+	list-style-type: upper-roman;
+}
+
+.media {
+	text-align: center; 
+}
+
+.media img{
+	border: solid 5px orange;
+	box-sizing: border-box;
+}
+
+.differences p {
+	color:red;
+	border: 1px solid red;
+	text-align: center;
+
+}
+
+td, th{
+	border:1px solid black;
+	margin: 0;
+}
+
+table {
+	text-align: center;
+	margin:0 auto;
+	border-spacing : 0; 
+}
+
+ul {
+width:85%;
+margin:auto;
+
+}
