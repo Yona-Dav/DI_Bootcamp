@@ -1,0 +1,103 @@
+* {
+	font-family: Aharoni;
+
+}
+
+li {
+	display:inline;
+	margin:0px 30px;
+	font-size: 20px;
+}
+
+input[type=button]{
+	color:black;
+	border-radius: 5px;
+	font-size:20 px;
+	background-color: rgba(30,176,206,0.6);
+	height:50px;
+	width:100px;
+	font-size: 20px
+}
+
+.text {
+	text-align: right;
+	margin: 0px 50px;
+
+}
+
+header{
+	background-color: black ;
+	margin:0;
+	padding-bottom: 30px;
+
+}
+
+.icon .fa { 
+	margin-left: 10px;
+	margin-top: 30px;
+}
+
+#products {
+	width:100%;
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.product {
+	flex:10%;
+	text-align: center;
+}
+
+
+span {
+	font-size: 1.5em;
+}
+
+.cart {
+	border:2px solid black;
+	width: 15vw;
+	margin-left: 5vw;
+}
+
+.cart:hover {
+	background-color: rgba(30,176,206,0.6);
+	cursor: pointer;
+
+
+}
+
+
+.product {
+    position: relative;
+    float:left;
+    margin:5px;}
+
+.product:hover .caption
+  {
+  display: block;
+  cursor: pointer;
+  }
+
+.product .caption {
+    position:absolute;
+    top:25%;
+    left:40%;
+    display:none;
+}
+
+.fa-shopping-bag, .fa-eye {
+	border:2px solid white;
+	background-color: white;
+	margin-left: 2px;
+}
+
+
+.fa-eye:hover {
+	background-color:rgba(30,176,206,0.6);
+	border-color: rgba(30,176,206,0.6);
+}
+
+.fa-shopping-bar:hover {
+	background-color:rgba(30,176,206,0.6);
+	border-color: rgba(30,176,206,0.6);
+}
