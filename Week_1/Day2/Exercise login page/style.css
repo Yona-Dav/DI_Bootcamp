@@ -1,0 +1,92 @@
+*{font-family: arial}
+
+.hr {
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.hr::before,
+.hr::after {
+    border-top: .0625em solid;
+    content: "";
+    flex: 1;
+    margin: 0 .5em;
+}
+
+
+
+#left {text-align: center;
+background-color:#ECF4ED;
+display: block;
+color:black;}
+
+input[type=email]{
+    background-color: #B2B9B3;
+    border:none;
+    padding: 10px 100px 10px 10px;
+    color:black;}
+
+input[type=password]{
+    background-color: #B2B9B3;
+    border:none;
+    padding: 10px 100px 10px 10px;
+    color:black;
+    margin-top: 10px}
+.fab {margin-left: 20px;
+font-size: 20px;}
+
+footer{
+    margin-top:70px;
+    margin-bottom: 10px
+
+}
+
+a:link { text-decoration: none;
+color:black;
+padding-left: 20px; }
+
+input[type=submit]
+{  background-color: purple;
+  color: white;
+  padding: 10px 120px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;}
+
+
+
+label{margin-top: 20px;}
+
+
+
+h1{font-size: 4em}
+
+#right{background-image: linear-gradient(to bottom right, #2C043C, #AD7BBF);
+text-align: center;
+padding-bottom: 115px}
+
+.fa-user-plus {margin-top: 100px;
+}
+
+h2,p {color:white;}
+
+.hr {color:black;}
+
+h2 {
+font-size: 50px;
+margin-bottom: 0px
+}
+
+h2 p {font-size: 30px;}
+
+button {
+    padding:10px 15px;
+    border-radius: 20px;
+    border-color: white;
+    background-color: transparent;
+    color:white;
+
+}
