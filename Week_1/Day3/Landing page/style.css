@@ -1,0 +1,32 @@
+
+body{background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqNNxHn8Ngk5EzM0_iDX2ZUy2rkudN9OJekS0ewhBShWPSAc6fHJKiD-792Ps6wI9mQLI&usqp=CAU);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+
+
+
+}
+
+h1{text-align: center;}
+
+section h2{text-align: center;}
+
+#Numbers{display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items:center;
+}
+
+h2 {color:blue;}
+
+#text {display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-end;
+
+	
+}
+
+
+
