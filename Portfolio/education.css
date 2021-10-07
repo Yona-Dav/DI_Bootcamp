@@ -1,0 +1,12 @@
+.navcolor {background-color: black;}
+
+.computer, .languages ,.education{
+    border-left:green 2px solid;
+    
+    list-style-position: inside;
+}
+
+.contactme{ background-color: black;
+    color:green}
+    
+    .link {color: green;}

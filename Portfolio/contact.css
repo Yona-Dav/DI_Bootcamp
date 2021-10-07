@@ -1,0 +1,88 @@
+.navcolor {background-color: black;}
+
+
+
+.contactme{ background-color: black;
+    color:green}
+    
+    .link {color: green;}
+
+
+
+
+h3 {
+    font-family: 'Poppins', sans-serif, 'arial';
+    color:green;
+}
+
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    font-size: 0.75em;
+    color:green;
+    top: -20px;
+    transition: all 0.225s ease;
+}
+
+.styled-input {
+    float: left;
+    width: 293px;
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px){
+    .styled-input {
+        width:100%;
+    }
+}
+
+.styled-input label {
+    color: black;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.styled-input.wide { 
+    width: 650px;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    padding: 15px;
+    border:2px black solid;
+    width: 100%;
+    font-size: 1rem;
+    color:black;
+    border-radius: 10px black solid;
+}
+
+
+textarea {
+    width: 100%;
+    min-height: 10em;
+}
+
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+    float: right;
+    padding: 7px 35px;
+    border-radius: 60px;
+    display: inline-block;
+    background-color: green;
+    color: white;  
+    cursor: pointer;  
+}
+
+
+
