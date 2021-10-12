@@ -12,7 +12,7 @@ let wordBad = sentence.indexOf("bad");
 console.log(wordBad);
 
 // If the word “bad” comes after the word “not”, you should replace the whole “not…bad” substring with “good”, then console.log the result.
-if (wordNot < wordBad && wordNot!=-1 && wordBad!=-1){
+if (wordNot < wordBad && wordNot!==-1 && wordBad!==-1){
 console.log(`${(sentence.substr(0, wordNot))} good ${(sentence.substr(wordBad+3, sentence.length))} `)
 }else {
     console.log(sentence)
