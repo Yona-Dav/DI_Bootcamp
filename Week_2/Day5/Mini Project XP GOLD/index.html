@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class= calculator>
+
+        <input type="text" class='display' name="display" id="display" disabled/>
+        <button type="button" class ="zero" name="zero" onclick="number(0);">0</button>
+        <button type="button" class ="one" name="one" onclick="number(1);">1</button>
+        <button type="button" class ="two" name="two" onclick="number(2);">2</button>
+        <button type="button" class ="three" name="three" onclick="number(3);">3</button>
+        <button type="button" class ="four" name="four" onclick="number(4);">4</button>
+        <button type="button" class="five" name="five" onclick="number(5);">5</button>
+        <button type="button" class="six" name="six" onclick="number(6);">6</button>
+        <button type="button" class="seven" name="seven" onclick="number(7);">7</button>
+        <button type="button" class="eigth" name="eigth" onclick="number(8);">8</button>
+        <button type="button" class= "nine" name="nine" onclick="number(9);">9</button>
+        <button type="button" class= "dot" name="dot" onclick="number('.');">.</button>
+        <button type="button" class="addition" name="addition" onclick="operator('+');">+</button>
+        <button type="button" class= "minus" name="minus" onclick="operator('-');">-</button>
+        <button type="button" class= "multiply" name="multiply" onclick="operator('*');">*</button>
+        <button type="button" class="div" name="div" onclick="operator('/');">/</button>
+        <button type="button" class="equal" name="equal" onclick="equal();">=</button>
+        <button type="button" class="reset" name="reset" onclick="reset();">reset</button> 
+        <button type="button"  class="clear" name="clear" onclick="clr();">clear</button> 
+          
+
+    </section>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
