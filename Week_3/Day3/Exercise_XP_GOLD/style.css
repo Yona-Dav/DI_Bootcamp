@@ -1,0 +1,24 @@
+section{
+    display:flex;
+    flex: inline-block;
+    justify-content: center;
+}
+
+.letter{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    margin: 5px;
+
+}
+
+.startDrag{
+    background-color:lightskyblue;
+}
+
+.endDrag{
+    background-color: lightsalmon;
+}

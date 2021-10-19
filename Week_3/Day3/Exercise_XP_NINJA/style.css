@@ -1,0 +1,22 @@
+#firstbox{
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-color: maroon;
+    color:mediumslateblue ;
+    font-size: 80px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: mediumslateblue;
+}
+
+.box{
+    float:left;
+    width: 100px;
+    height: 100px;
+    animation: expand .10s ease-in-out;
+}

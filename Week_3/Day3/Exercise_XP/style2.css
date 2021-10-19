@@ -1,0 +1,23 @@
+section{
+    display: flex;
+    justify-content: center;
+}
+
+.dropzone{
+    width: 150px;
+    height: 150px;
+    border: red solid 2px;
+    display:flex;
+    justify-content: center;
+
+}
+
+.draggedItem{
+    width: 120px;
+    height: 120px;
+    border: purple solid 2px;
+    background-color:salmon;
+    border-radius: 60px;
+    margin-top: 20px;
+
+}
