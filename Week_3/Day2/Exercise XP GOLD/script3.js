@@ -27,7 +27,6 @@ let shopForm = document.forms[0]
 
 function addItem(){
     let inputValue = document.getElementById('item').value;shoppingList.push(inputValue);
-    console.log(shoppingList);
 }
 
 let button = document.getElementById('addItem');

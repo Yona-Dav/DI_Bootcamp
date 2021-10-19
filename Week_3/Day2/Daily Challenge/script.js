@@ -29,7 +29,6 @@ function getValues(){
 
 
 
-
 let button = document.getElementsByTagName("button")[0];
 button.addEventListener('click',getValues)
 
@@ -46,6 +45,8 @@ let parag = document.getElementsByTagName('p')[0];
 parag.appendChild(newButton);
 
 function shuffle() {
+    // console.log(listWord)
+    let story = [`One day, ${listWord[2]} in a ${listWord[4]} ${listWord[3]} and saw a ${listWord[1]} ${listWord[0]}`, `Today I and my ${listWord[1]} ${listWord[0]} were ${listWord[3]} about ${listWord[2]} in a ${listWord[4]}`, `In the ${listWord[4]}, ${listWord[2]} , a ${listWord[1]} person , ${listWord[3]} on a ${listWord[0]}`, `In the ${listWord[4]}, ${listWord[2]} , a ${listWord[1]} person , ${listWord[3]} on a ${listWord[0]}`];
     span.innerText = '';
     for (let i = story.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
@@ -55,9 +56,6 @@ function shuffle() {
         span.innerText= x;
     }
 }
-let story = [`One day, ${listWord[2]} in a ${listWord[4]} ${listWord[3]} and saw a ${listWord[1]} ${listWord[0]}`, `Today I and my ${listWord[1]} ${listWord[0]} were ${listWord[3]} about ${listWord[2]} in a ${listWord[4]}`, `In the ${listWord[4]}, ${listWord[2]} , a ${listWord[1]} person , ${listWord[3]} on a ${listWord[0]}`, `In the ${listWord[4]}, ${listWord[2]} , a ${listWord[1]} person , ${listWord[3]} on a ${listWord[0]}`];
-
-
 
 
 let shufButton = document.getElementsByClassName('shuffle')[0];
