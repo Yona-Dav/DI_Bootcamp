@@ -1,0 +1,59 @@
+
+#all{
+    display: flex;
+    flex-direction: row;
+    height :98vh;
+    width: 97vw;
+    background-color: rgb(196, 196, 196);
+}
+
+#palet {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 10px;
+    width: 17vw;
+    height: 97vh;
+    margin-bottom: 10px;
+}
+
+#painting {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-rows: repeat(24, 1fr);
+    grid-template-columns: repeat(60, 1fr);
+    margin :5px;
+    width: 80vw;
+    height: 97vh;
+
+}
+
+.colors{
+    border : black solid 2px;
+    height: 90%;
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+
+}
+
+#clear{
+    display: grid;
+    grid-column: span 3;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.cell{
+    background-color: white;
+    height: 95%;
+    width: 95%;
+
+}

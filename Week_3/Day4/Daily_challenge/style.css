@@ -1,0 +1,60 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(204, 95, 132);
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    margin-top: 20px;
+}
+
+button{
+    border-color:transparent;
+    margin-left: 0;
+    height: 46px;
+    color:blue;
+    position:absolute;
+    background-color: white;
+    font-size: 30px;
+}
+
+#list{
+    height: 40px;
+    width: 300px;
+    font-size: 30px;
+    margin-right: 0;
+    position:relative;
+    border-color: transparent;
+}
+
+div{margin-left:33%;
+    align-content: center;
+    width:390px;
+    background-color: white;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+hr{
+    margin-right: 50px;
+    background-color:blue;
+}
+
+label{
+    font-size: 20px;
+}
+
+.fas{
+    color: rgb(204, 95, 132) ;
+}
+
+.clear{
+    color:rgb(204, 95, 132);
+    width: 390px;
+    text-align: right;
+}
