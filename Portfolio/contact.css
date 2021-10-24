@@ -3,22 +3,22 @@
 
 
 .contactme{ background-color: black;
-    color:green}
+    color:white}
     
-    .link {color: green;}
+    .link {color: white;}
 
 
 
 
 h3 {
     font-family: 'Poppins', sans-serif, 'arial';
-    color:green;
+    color:black;
 }
 
 
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
     font-size: 0.75em;
-    color:green;
+    color:white;
     top: -20px;
     transition: all 0.225s ease;
 }
@@ -79,7 +79,7 @@ textarea {
     padding: 7px 35px;
     border-radius: 60px;
     display: inline-block;
-    background-color: green;
+    background-color: black;
     color: white;  
     cursor: pointer;  
 }

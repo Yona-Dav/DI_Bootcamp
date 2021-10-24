@@ -1,12 +1,18 @@
 .navcolor {background-color: black;}
 
 .computer, .languages ,.education{
-    border-left:green 2px solid;
+    border-left:black 2px solid;
     
     list-style-position: inside;
 }
 
 .contactme{ background-color: black;
-    color:green}
+    color:white}
     
-    .link {color: green;}
+    .link {color: white;}
+
+.lang{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    list-style: none;
+}

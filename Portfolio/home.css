@@ -6,15 +6,19 @@
 }
 
 
-body{background: url(https://cdn.pixabay.com/photo/2014/05/27/23/32/matrix-356024_960_720.jpg ) no-repeat center center fixed; 
+body{background: url(https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=464&q=80) no-repeat center center fixed; 
     background-repeat: no-repeat;
     background-size: cover;}
 
 .contactme{ background-color: black;
-color:green}
+color:white}
 
-.link {color: green;}
+.link {color: white;}
 
 .navcolor{background-color: black;}
+
+.language{
+    display:inline-block;
+}
 
 
