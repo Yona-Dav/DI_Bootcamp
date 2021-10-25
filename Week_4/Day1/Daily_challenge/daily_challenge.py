@@ -1,8 +1,8 @@
 # Using the input function, ask the user for a string. The string must be 10 characters long.
 sentence = input('Enter a sentence of 10 characters')
-if len(sentence)>10:
+if len(sentence)<10:
     print('string not long enough')
-elif len(sentence)<10:
+elif len(sentence)>10:
     print('string too long')
 
 # print the first and last characters of the given text.
