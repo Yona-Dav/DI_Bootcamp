@@ -81,21 +81,3 @@ current_menu.remove_item('Salad')
 
 
 
-animal_dict = {}
-animals = ['Ape', 'Ant', 'Baboon', 'Butterfly', 'Cat']
-i = 0
-temp_l = animals.copy()
-while len(temp_l) > 0:
-    new_list = [temp_l[0]]
-    temp_l.pop(0)
-    try:
-        while temp_l[0][0] == new_list[0][0]:
-            new_list.append(temp_l[0])
-            temp_l.pop(0)
-        animal_dict[i] = new_list
-        i+=1
-    except:
-        animal_dict[i] = new_list
-
-
-print(animal_dict)
