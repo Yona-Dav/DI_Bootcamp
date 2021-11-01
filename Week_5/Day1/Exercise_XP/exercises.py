@@ -157,3 +157,15 @@ ramat_gan_safari.get_groups()
     #                 animals_lists[-1].append(animal)
     #             else:
     #                 animals_lists.append([animal])
+# 
+#     
+        # animals_sorted = {}
+        # for index, sublist in enumerate(animals_lists):
+        #     # print('the current sublist:', sublist)
+        #     # print('sublist[0]', sublist[0])
+        #     if len(sublist) == 1:
+        #         animals_sorted[index+1] = sublist[0]
+        #     else:
+        #         animals_sorted[index+1] = sublist
+
+        # print(animals_sorted)
