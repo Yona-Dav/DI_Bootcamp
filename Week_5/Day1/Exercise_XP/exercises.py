@@ -94,22 +94,28 @@ class Zoo:
             self.animals.append(self.new_animal)
 
     def get_animals(self):
-        print(self.animals)
+        for animal in self.animals:
+            print(animal)
 
     def sell_animal(self, animal_sold):
-        self.animal_sold = animal_sold
-        self.animals.remove(self.animal_sold)
+        if animal_sold in self.animals:
+            self.animals.remove(animal_sold)
     
     def sort_animals(self):    
         groups=defaultdict(list)
-        for animal in self.animals:
+        for animal in sorted(self.animals):
             groups[animal[0]].append(animal)
         animal_sorted = sorted(groups.values())
         self.index_animal = {}
         for index, animal in enumerate(animal_sorted):
-            self.index_animal[index+1]=animal
+            if len(animal)==1:
+                self.index_animal[index+1] = animal[0]
+            else:
+                self.index_animal[index+1]=animal
 
     def get_groups(self):
+        for values in self.index_animal.values():
+            print(values)
         print(self.index_animal)
         
 
@@ -131,3 +137,23 @@ ramat_gan_safari.sort_animals()
 ramat_gan_safari.get_groups()
 
 
+# other way to sort_animals
+    # def sort_animals(self):
+    #     '''Create a method called sort_animals that sorts the animals
+    #      alphabetically and groups them together based on their first letter.'''
+    #     animals_lists = []
+    #     for animal in sorted(self.animals):
+    #         print('current animal:', animal)
+    #         if not animals_lists:
+    #             animals_lists.append([animal])
+                
+    #         else:
+    #             print(f"current animal first letter: {animal[0]}")
+    #             print(f"last list: {animals_lists[-1]}")
+    #             print(f"first object in last list: {animals_lists[-1][0]}")
+    #             print(f"first letter of first object in last list: {animals_lists[-1][0][0]}")
+    #             if animal[0] == animals_lists[-1][0][0]:
+    #                 print('matches last object')
+    #                 animals_lists[-1].append(animal)
+    #             else:
+    #                 animals_lists.append([animal])
