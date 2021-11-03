@@ -21,6 +21,9 @@ class Circle:
         self.aera = math.pi*self.radius**2
         print(self.aera)
     
+    def __str__(self):
+        return f'Circle with a radius of {self.radius}'
+
     def draw_circle(self):
         t = turtle.Turtle()
         print(t.circle(self.radius))
