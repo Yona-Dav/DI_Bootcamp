@@ -35,7 +35,7 @@ class Text:
     @classmethod
     def from_file(cls,file):
         with open(file,'r') as f:
-             text = f.read()
+            text = f.read()
         return cls(text)
         
 class TextModification(Text):
