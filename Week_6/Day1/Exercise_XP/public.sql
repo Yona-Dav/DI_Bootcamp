@@ -39,7 +39,7 @@ SELECT * from customers where last_name = 'Smith'
 SELECT * from customers where last_name = 'Jones'
 
 -- All customers whose firstname is not ‘Scott’.
-SELECT * from customers where first_name IS NOT 'Scott'
+SELECT * from customers where NOT first_name ='Scott'
 
 
 
