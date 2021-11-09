@@ -58,15 +58,16 @@ select * from purchases inner join items on purchases.item_id = items.items_id w
 ------------------------------------------------------------------------------------------
 
 -- -- 4. Create a purchase for Scott Scott – he bought a hard drive.-- --
-Insert into customers(first_name, last_name) values ('Scott','Scott');
-Insert into items(name,price) values('Hard Drive',200);
-insert into purchases(customer_id , item_id) values
-((SELECT customer_id from customers WHERE first_name='Scott'),(SELECT items_id from items WHERE price=200));
+
+-- Insert into customers(first_name, last_name) values ('Scott','Scott');
+-- Insert into items(name,price) values('Hard Drive',200);
+-- insert into purchases(customer_id , item_id) values
+-- ((SELECT customer_id from customers WHERE first_name='Scott' and customer_id = 6),(SELECT items_id from items WHERE price=200));
 
 -------------------------------------------------------------------------------------------
 
 -- Use SQL to show all the customers who have made a purchase.
-select customers.first_name, customers.last_name, items.name from purchases join items on purchases.item_id = items.items_id join customers on purchases.customer_id = customers.customer_id;
+-- select customers.first_name, customers.last_name, items.name from purchases join items on purchases.item_id = items.items_id join customers on purchases.customer_id = customers.customer_id;
 
 
 
