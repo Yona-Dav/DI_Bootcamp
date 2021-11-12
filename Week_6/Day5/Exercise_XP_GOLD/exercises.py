@@ -38,17 +38,17 @@ from tabulate import tabulate
 
 # Create a new table in pgAdmin
 
-# HOSTNAME = 'localhost'
-# USERNAME = 'postgres'
-# PASSWORD = 'yoshir34'
-# DATABASE = 'authentification'
+HOSTNAME = 'localhost'
+USERNAME = 'postgres'
+PASSWORD = 'yoshir34'
+DATABASE = 'authentification'
 # connect = psycopg2.connect(host=HOSTNAME, user=USERNAME, password=PASSWORD, dbname=DATABASE )
 # cursor = connect.cursor()
 
 # cursor.execute('''CREATE TABLE authentification
 #          (ID serial PRIMARY KEY     NOT NULL,
 #          username   varchar(50)   NOT NULL,
-#          password   varchar(20)     NOT NULL);''')
+#          password   varchar(30)     NOT NULL);''')
 
 # cursor.execute("insert into authentification(username, password) values ('Lea', '1234') ")
 # cursor.execute("insert into authentification(username, password) values ('Sarah', 'hey34') ")
@@ -56,10 +56,6 @@ from tabulate import tabulate
 
 # connect.commit()
 # connect.close()
-HOSTNAME = 'localhost'
-USERNAME = 'postgres'
-PASSWORD = 'yoshir34'
-DATABASE = 'authentification'
 
 
 # logged_in = []
@@ -116,4 +112,19 @@ def see_users():
 
 see_users()
 
- 
+
+
+### Bonus 
+
+#Example of encrypt/decrypt
+
+from cryptography.fernet import Fernet
+key = Fernet.generate_key()
+cipher_suite = Fernet(key)
+f = Fernet(key)
+# password = 'hello'
+# token = f.encrypt(password.encode())
+# print(token)
+# decrypt_token = f.decrypt(token)
+# print(decrypt_token)
+
