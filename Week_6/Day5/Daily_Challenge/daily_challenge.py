@@ -32,23 +32,24 @@ DATABASE = 'countries'
 def get_ten_countries():
     url = 'https://restcountries.com/v3.1/all'
     data = requests.get(url)
-    data = data.json()
-    for i in range(10):
-        x = random.randint(0,len(data))
-        print(x)
-        name = data[x]['name']['common']
-        capital = data[x]['capital'][0]
-        flag = data[x]['flags']['png']
-        subregion = data[x]['subregion']
-        population = data[x]['population']
+    if data.status_code == 200:
+        data = data.json()
+        for i in range(10):
+            x = random.randint(0,len(data))
+            print(x)
+            name = data[x]['name']['common']
+            capital = str(data[x]['capital'][0])
+            flag = data[x]['flag']
+            subregion = data[x].get('subregion', 'no subregion')
+            population = data[x]['population']
 
-        connection = psycopg2.connect(host=HOSTNAME, user=USERNAME, password=PASSWORD, dbname=DATABASE )
-        cursor = connection.cursor()
-        query = f"INSERT INTO countries (name, capital, flag, subregion, population) VALUES ('{name}','{capital}','{flag}','{subregion}','{population}');"
-        cursor.execute(query)
-        connection.commit()
-        connection.close()
-    
+            connection = psycopg2.connect(host=HOSTNAME, user=USERNAME, password=PASSWORD, dbname=DATABASE )
+            cursor = connection.cursor()
+            query = f"INSERT INTO countries (name, capital, flag, subregion, population) VALUES ('{name}','{capital}','{flag}','{subregion}','{population}');"
+            cursor.execute(query)
+            connection.commit()
+            connection.close()
+        
 
     connection = psycopg2.connect(host=HOSTNAME, user=USERNAME, password=PASSWORD, dbname=DATABASE )
     cursor = connection.cursor()
