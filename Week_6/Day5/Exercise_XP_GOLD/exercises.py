@@ -58,46 +58,46 @@ DATABASE = 'authentification'
 # connect.close()
 
 
-# logged_in = []
-# while True:
-#     user_request = input('Enter login or exit ')
-#     if user_request == "exit":
-#         break
-#     elif user_request=='login':
-#         username = input('Enter your username ')
-#         password = input("Enter your password ")
-#         connect = psycopg2.connect(host=HOSTNAME, user=USERNAME, password=PASSWORD, dbname=DATABASE )
-#         cursor = connect.cursor()
-#         cursor.execute(f"(select * from authentification where username ='{username}' and password='{password}')")
-#         user = cursor.fetchall()
-#         connect.close()
-#         if len(user) != 0:
-#             print('you are now logged in')
-#             logged_in.append(username)
-#         else:
-#             signup = input('Would you like to sign up? ')
-#             if signup == 'no':
-#                 break
-#             else:
-#                 username =input('Enter your username ')
-#                 connect = psycopg2.connect(host=HOSTNAME, user=USERNAME, password=PASSWORD, dbname=DATABASE )
-#                 cursor = connect.cursor()
-#                 cursor.execute(f"(select username from authentification where username ='{username}')")
-#                 name = cursor.fetchall()
-#                 connect.close()
-#                 while len(name) != 0:
-#                     username=input('Enter your username ')
-#                     connect = psycopg2.connect(host=HOSTNAME, user=USERNAME, password=PASSWORD, dbname=DATABASE )
-#                     cursor = connect.cursor()
-#                     cursor.execute(f"(select username from authentification where username ='{username}')")
-#                     name = cursor.fetchall()
-#                     connect.close()
-#                 password =input("Enter your password ")
-#                 connect = psycopg2.connect(host=HOSTNAME, user=USERNAME, password=PASSWORD, dbname=DATABASE )
-#                 cursor = connect.cursor()
-#                 cursor.execute(f"insert into authentification(username, password) values ('{username}', '{password}') ")
-#                 connect.commit()
-#                 connect.close()
+logged_in = []
+while True:
+    user_request = input('Enter login or exit ')
+    if user_request == "exit":
+        break
+    elif user_request=='login':
+        username = input('Enter your username ')
+        password = input("Enter your password ")
+        connect = psycopg2.connect(host=HOSTNAME, user=USERNAME, password=PASSWORD, dbname=DATABASE )
+        cursor = connect.cursor()
+        cursor.execute(f"(select * from authentification where username ='{username}' and password='{password}')")
+        user = cursor.fetchall()
+        connect.close()
+        if len(user) != 0:
+            print('you are now logged in')
+            logged_in.append(username)
+        else:
+            signup = input('Would you like to sign up? ')
+            if signup == 'no':
+                break
+            else:
+                username =input('Enter your username ')
+                connect = psycopg2.connect(host=HOSTNAME, user=USERNAME, password=PASSWORD, dbname=DATABASE )
+                cursor = connect.cursor()
+                cursor.execute(f"(select username from authentification where username ='{username}')")
+                name = cursor.fetchall()
+                connect.close()
+                while len(name) != 0:
+                    username=input('Enter your username ')
+                    connect = psycopg2.connect(host=HOSTNAME, user=USERNAME, password=PASSWORD, dbname=DATABASE )
+                    cursor = connect.cursor()
+                    cursor.execute(f"(select username from authentification where username ='{username}')")
+                    name = cursor.fetchall()
+                    connect.close()
+                password =input("Enter your password ")
+                connect = psycopg2.connect(host=HOSTNAME, user=USERNAME, password=PASSWORD, dbname=DATABASE )
+                cursor = connect.cursor()
+                cursor.execute(f"insert into authentification(username, password) values ('{username}', '{password}') ")
+                connect.commit()
+                connect.close()
 
 
 # To have a 'list' of username that exits in the database
